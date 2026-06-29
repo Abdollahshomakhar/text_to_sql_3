@@ -1,0 +1,14 @@
+streamlit
+pandas
+mysql-connector-python
+chromadb
+openai
+
+llama-index
+llama-index-llms-openai-like
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
+
+sentence-transformers
+torch
+transformers
