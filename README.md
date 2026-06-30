@@ -76,7 +76,6 @@ Display Results
 ├── docker-compose.yml
 ├── requirements.txt
 ├── Copy_of_llamaindex_vector_stores.ipynb
-└── README.md
 ```
 
 ---
