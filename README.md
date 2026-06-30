@@ -124,9 +124,10 @@ Find clients whose payments are less than 100.
 Generated SQL
 
 ```sql
-SELECT ...
-FROM ...
-WHERE payment_total < 100;
+SELECT c. client_id, c. name
+FROM clients c
+JOIN payments p ON c. client_id = p. client_id
+GROUP BY c. client_id, c. name HAVING SUM (p. amount) < 100;
 ```
 
 ---
@@ -142,12 +143,6 @@ WHERE payment_total < 100;
 ## Future Improvements
 
 - SQL validation
-- Multi-turn conversations
-- Support for multiple databases
-- Query explanation
-- Role-based access control
-
----
 
 ## License
 
